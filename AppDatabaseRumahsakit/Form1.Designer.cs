@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem25 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem26 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem27 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem28 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem29 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem30 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem31 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem32 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem33 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem34 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem35 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem36 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem37 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem38 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem39 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem40 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem41 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem42 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem43 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem44 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem45 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem46 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem47 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem48 = new System.Windows.Forms.ListViewItem("");
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,6 +60,8 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -67,6 +69,10 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.listView3 = new System.Windows.Forms.ListView();
@@ -78,12 +84,6 @@
             this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -133,31 +133,31 @@
             this.obatToolStripMenuItem,
             this.penyakitToolStripMenuItem});
             this.viewByToolStripMenuItem.Name = "viewByToolStripMenuItem";
-            this.viewByToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewByToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.viewByToolStripMenuItem.Text = "View by";
             // 
             // pasienToolStripMenuItem
             // 
             this.pasienToolStripMenuItem.Name = "pasienToolStripMenuItem";
-            this.pasienToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pasienToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.pasienToolStripMenuItem.Text = "Pasien";
             // 
             // dokterToolStripMenuItem
             // 
             this.dokterToolStripMenuItem.Name = "dokterToolStripMenuItem";
-            this.dokterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dokterToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.dokterToolStripMenuItem.Text = "Dokter";
             // 
             // obatToolStripMenuItem
             // 
             this.obatToolStripMenuItem.Name = "obatToolStripMenuItem";
-            this.obatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.obatToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.obatToolStripMenuItem.Text = "Obat";
             // 
             // penyakitToolStripMenuItem
             // 
             this.penyakitToolStripMenuItem.Name = "penyakitToolStripMenuItem";
-            this.penyakitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.penyakitToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.penyakitToolStripMenuItem.Text = "Penyakit";
             // 
             // tabPage2
@@ -182,10 +182,10 @@
             this.columnHeader25,
             this.columnHeader26});
             this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem17,
-            listViewItem18,
-            listViewItem19,
-            listViewItem20});
+            listViewItem33,
+            listViewItem34,
+            listViewItem35,
+            listViewItem36});
             this.listView2.Location = new System.Drawing.Point(0, 3);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(768, 280);
@@ -218,6 +218,16 @@
             this.columnHeader10.Text = "NoTelp";
             this.columnHeader10.Width = 79;
             // 
+            // columnHeader25
+            // 
+            this.columnHeader25.Text = "GajiPokok";
+            this.columnHeader25.Width = 100;
+            // 
+            // columnHeader26
+            // 
+            this.columnHeader26.Text = "Spesialis";
+            this.columnHeader26.Width = 101;
+            // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.listView1);
@@ -242,10 +252,10 @@
             this.columnHeader23,
             this.columnHeader24});
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem21,
-            listViewItem22,
-            listViewItem23,
-            listViewItem24});
+            listViewItem37,
+            listViewItem38,
+            listViewItem39,
+            listViewItem40});
             this.listView1.Location = new System.Drawing.Point(-4, 3);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(772, 280);
@@ -279,6 +289,26 @@
             this.columnHeader5.Text = "NoTelp";
             this.columnHeader5.Width = 95;
             // 
+            // columnHeader21
+            // 
+            this.columnHeader21.Text = "Umur";
+            this.columnHeader21.Width = 45;
+            // 
+            // columnHeader22
+            // 
+            this.columnHeader22.Text = "BB";
+            this.columnHeader22.Width = 40;
+            // 
+            // columnHeader23
+            // 
+            this.columnHeader23.Text = "TB";
+            this.columnHeader23.Width = 37;
+            // 
+            // columnHeader24
+            // 
+            this.columnHeader24.Text = "Golongan";
+            this.columnHeader24.Width = 80;
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -308,10 +338,10 @@
             this.columnHeader12,
             this.columnHeader13});
             this.listView3.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem25,
-            listViewItem26,
-            listViewItem27,
-            listViewItem28});
+            listViewItem41,
+            listViewItem42,
+            listViewItem43,
+            listViewItem44});
             this.listView3.Location = new System.Drawing.Point(0, 3);
             this.listView3.Name = "listView3";
             this.listView3.Size = new System.Drawing.Size(378, 280);
@@ -352,10 +382,10 @@
             this.columnHeader17,
             this.columnHeader18});
             this.listView4.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem29,
-            listViewItem30,
-            listViewItem31,
-            listViewItem32});
+            listViewItem45,
+            listViewItem46,
+            listViewItem47,
+            listViewItem48});
             this.listView4.Location = new System.Drawing.Point(0, 3);
             this.listView4.Name = "listView4";
             this.listView4.Size = new System.Drawing.Size(378, 280);
@@ -378,36 +408,6 @@
             // 
             this.columnHeader18.Text = "Golongan";
             this.columnHeader18.Width = 88;
-            // 
-            // columnHeader21
-            // 
-            this.columnHeader21.Text = "Umur";
-            this.columnHeader21.Width = 45;
-            // 
-            // columnHeader22
-            // 
-            this.columnHeader22.Text = "BB";
-            this.columnHeader22.Width = 40;
-            // 
-            // columnHeader23
-            // 
-            this.columnHeader23.Text = "TB";
-            this.columnHeader23.Width = 37;
-            // 
-            // columnHeader24
-            // 
-            this.columnHeader24.Text = "Golongan";
-            this.columnHeader24.Width = 80;
-            // 
-            // columnHeader25
-            // 
-            this.columnHeader25.Text = "GajiPokok";
-            this.columnHeader25.Width = 100;
-            // 
-            // columnHeader26
-            // 
-            this.columnHeader26.Text = "Spesialis";
-            this.columnHeader26.Width = 101;
             // 
             // Form1
             // 
