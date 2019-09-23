@@ -58,6 +58,12 @@
     <Compile Include="ObatForm.Designer.cs">
       <DependentUpon>ObatForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PasienForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasienForm.Designer.cs">
+      <DependentUpon>PasienForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PenyakitForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ObatForm.resx">
       <DependentUpon>ObatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasienForm.resx">
+      <DependentUpon>PasienForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PenyakitForm.resx">
       <DependentUpon>PenyakitForm.cs</DependentUpon>
