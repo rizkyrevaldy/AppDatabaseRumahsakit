@@ -26,5 +26,20 @@ namespace AppDatabaseRumahsakit
         {
 
         }
+
+        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
