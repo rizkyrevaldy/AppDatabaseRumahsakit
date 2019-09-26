@@ -41,5 +41,10 @@ namespace AppDatabaseRumahsakit
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if(tabControl1.SelectedTab.Equals(tabPage1))
+        }
     }
 }
