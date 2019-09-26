@@ -260,14 +260,16 @@ namespace AppDatabaseRumahsakit
         {
             if (tabControl1.SelectedTab.Equals(tabPage1))
             {
-                string id = listView1.SelectedItems["id"].ToString();
-                string query = "DELETE FROM pasien WHERE id_pasien=@id";
+                string id = listView1.SelectedItems[0].Text;
+                string query = "DELETE FROM pasien WHERE ID=@id";
                 try
                 {
                     databaseConnection.Open();
                     MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
                     cmd.CommandTimeout = 60;
-                    MySqlDataReader reader = cmd.ExecuteReader();
+                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data Berhasil Dihapus");
                 }
                 catch (Exception ex)
                 {
