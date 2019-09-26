@@ -203,6 +203,7 @@
             this.Controls.Add(this.label1);
             this.Name = "DokterForm";
             this.Text = "DokterForm";
+            this.Load += new System.EventHandler(this.DokterForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

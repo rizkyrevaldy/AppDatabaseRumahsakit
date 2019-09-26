@@ -12,3 +12,23 @@ C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsaki
 C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.csproj.CoreCompileInputs.cache
 C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.exe
 C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.pdb
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\AppDatabaseRumahsakit.exe.config
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\AppDatabaseRumahsakit.exe
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\AppDatabaseRumahsakit.pdb
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\MySql.Data.dll
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\Google.Protobuf.dll
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\Renci.SshNet.dll
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\MySql.Data.xml
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.csprojAssemblyReference.cache
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.Form1.resources
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.DokterForm.resources
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.TransaksiForm.resources
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.PasienForm.resources
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.PenyakitForm.resources
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.Properties.Resources.resources
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.csproj.GenerateResource.cache
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.csproj.CoreCompileInputs.cache
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.csproj.CopyComplete
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.exe
+C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.pdb

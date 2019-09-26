@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace AppDatabaseRumahsakit
 {
     public partial class DokterForm : Form
     {
+        private static string connectionString = "server=localhost;port=3306;username=root;password=;database=rumah_sakit;";
+        private MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+
         public DokterForm()
         {
             InitializeComponent();
@@ -108,6 +112,11 @@ namespace AppDatabaseRumahsakit
         }
 
         private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DokterForm_Load(object sender, EventArgs e)
         {
 
         }
