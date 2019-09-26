@@ -133,7 +133,7 @@ namespace AppDatabaseRumahsakit
                             ListViewItem listViewItem = new ListViewItem(reader["NIP"].ToString());
                             listViewItem.SubItems.Add(reader["nama"].ToString());
                             listViewItem.SubItems.Add(reader["jenis_kelamin"].ToString());
-                            listViewItem.SubItems.Add(reader["alamat"].ToString());
+                            listViewItem.SubItems.Add(reader["alamat"].ToString()); 
                             listViewItem.SubItems.Add(reader["no_telp"].ToString());
                             listViewItem.SubItems.Add(reader["gaji_pokok"].ToString());
                             listView1.Items.Add(listViewItem);
@@ -171,7 +171,7 @@ namespace AppDatabaseRumahsakit
                         {
                             ListViewItem listViewItem = new ListViewItem(reader["kode_penyakit"].ToString());
                             listViewItem.SubItems.Add(reader["nama_penyakit"].ToString());
-                            listViewItem.SubItems.Add(reader["golongan"].ToString());
+                            listViewItem.SubItems.Add(reader["golongan"].ToString()); //kode_penyakit nama_penyakit golongan
                             listView1.Items.Add(listViewItem);
                         }
                         reader.Close();
@@ -207,7 +207,7 @@ namespace AppDatabaseRumahsakit
                         {
                             ListViewItem listViewItem = new ListViewItem(reader["no_transaksi"].ToString());
                             listViewItem.SubItems.Add(reader["id_pasien"].ToString());
-                            listViewItem.SubItems.Add(reader["id_dokter"].ToString());
+                            listViewItem.SubItems.Add(reader["id_dokter"].ToString()); //no_transaksi id_pasien id_dokter kode_penyakit biaya_perawatan
                             listViewItem.SubItems.Add(reader["kode_penyakit"].ToString());
                             listViewItem.SubItems.Add(reader["biaya_perawatan"].ToString());
                             listView1.Items.Add(listViewItem);
@@ -276,3 +276,4 @@ namespace AppDatabaseRumahsakit
         }
     }
 }
+

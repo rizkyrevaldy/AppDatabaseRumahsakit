@@ -25,7 +25,27 @@ namespace AppDatabaseRumahsakit
         {
             if (Form1.status == 'c')
             {
+                string query = "INSERT INTO penyakit (kode_penyakit, nama_penyakit, golongan) VALUES (@kode_penyakit, @nama_penyakit, @golongan)";
 
+                try
+                {
+                    databaseConnection.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
+                    cmd.CommandTimeout = 60;
+                    cmd.Parameters.AddWithValue("@kode_penyakit", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@nama_penyakit", textBox2.Text);
+                    cmd.Parameters.AddWithValue("@golongan", textBox3.Text);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data berhasil ditambahkan");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    databaseConnection.Close();
+                }
             }
             else if (Form1.status == 'u')
             {

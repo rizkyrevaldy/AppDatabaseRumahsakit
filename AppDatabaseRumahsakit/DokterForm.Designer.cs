@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,7 +45,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(257, 388);
+            this.button1.Location = new System.Drawing.Point(257, 345);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 56;
@@ -55,21 +53,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // textBox9
+            // textBox6
             // 
-            this.textBox9.Location = new System.Drawing.Point(147, 335);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(185, 20);
-            this.textBox9.TabIndex = 55;
-            this.textBox9.TextChanged += new System.EventHandler(this.TextBox9_TextChanged);
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(147, 288);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(185, 20);
-            this.textBox8.TabIndex = 54;
-            this.textBox8.TextChanged += new System.EventHandler(this.TextBox8_TextChanged);
+            this.textBox6.Location = new System.Drawing.Point(147, 288);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(185, 20);
+            this.textBox6.TabIndex = 54;
+            this.textBox6.TextChanged += new System.EventHandler(this.TextBox8_TextChanged);
             // 
             // textBox5
             // 
@@ -110,16 +100,6 @@
             this.textBox1.Size = new System.Drawing.Size(185, 20);
             this.textBox1.TabIndex = 47;
             this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(45, 335);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 13);
-            this.label9.TabIndex = 46;
-            this.label9.Text = "Spesialis";
-            this.label9.Click += new System.EventHandler(this.Label9_Click);
             // 
             // label8
             // 
@@ -185,16 +165,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 423);
+            this.ClientSize = new System.Drawing.Size(387, 392);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -212,14 +190,12 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

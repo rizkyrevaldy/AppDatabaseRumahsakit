@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem25 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem26 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem27 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem28 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem29 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem30 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem31 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem32 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("");
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,7 +61,6 @@
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -185,13 +184,12 @@
             this.columnHeader8,
             this.columnHeader9,
             this.columnHeader10,
-            this.columnHeader25,
-            this.columnHeader26});
+            this.columnHeader25});
             this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem17,
-            listViewItem18,
-            listViewItem19,
-            listViewItem20});
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4});
             this.listView2.Location = new System.Drawing.Point(0, 3);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(768, 280);
@@ -229,11 +227,6 @@
             this.columnHeader25.Text = "GajiPokok";
             this.columnHeader25.Width = 100;
             // 
-            // columnHeader26
-            // 
-            this.columnHeader26.Text = "Spesialis";
-            this.columnHeader26.Width = 101;
-            // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.listView1);
@@ -258,10 +251,10 @@
             this.columnHeader23,
             this.columnHeader24});
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem21,
-            listViewItem22,
-            listViewItem23,
-            listViewItem24});
+            listViewItem5,
+            listViewItem6,
+            listViewItem7,
+            listViewItem8});
             this.listView1.Location = new System.Drawing.Point(-4, 3);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(772, 280);
@@ -345,10 +338,10 @@
             this.columnHeader17,
             this.columnHeader18});
             this.listView4.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem25,
-            listViewItem26,
-            listViewItem27,
-            listViewItem28});
+            listViewItem9,
+            listViewItem10,
+            listViewItem11,
+            listViewItem12});
             this.listView4.Location = new System.Drawing.Point(0, 3);
             this.listView4.Name = "listView4";
             this.listView4.Size = new System.Drawing.Size(378, 280);
@@ -391,10 +384,10 @@
             this.columnHeader14,
             this.columnHeader15});
             this.listView3.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem29,
-            listViewItem30,
-            listViewItem31,
-            listViewItem32});
+            listViewItem13,
+            listViewItem14,
+            listViewItem15,
+            listViewItem16});
             this.listView3.Location = new System.Drawing.Point(0, 3);
             this.listView3.Name = "listView3";
             this.listView3.Size = new System.Drawing.Size(503, 280);
@@ -534,7 +527,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader23;
         private System.Windows.Forms.ColumnHeader columnHeader24;
         private System.Windows.Forms.ColumnHeader columnHeader25;
-        private System.Windows.Forms.ColumnHeader columnHeader26;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
