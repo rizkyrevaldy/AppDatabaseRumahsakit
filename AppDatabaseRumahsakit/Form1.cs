@@ -255,11 +255,28 @@ namespace AppDatabaseRumahsakit
             }
         }
 
+
         private void button2_Click(object sender, EventArgs e)
         {
             if (tabControl1.SelectedTab.Equals(tabPage1))
             {
-                
+                string id = listView1.SelectedItems["id"].ToString();
+                string query = "DELETE FROM pasien WHERE id_pasien=@id";
+                try
+                {
+                    databaseConnection.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
+                    cmd.CommandTimeout = 60;
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    databaseConnection.Close();
+                }
             }
             else if (tabControl1.SelectedTab.Equals(tabPage2))
             {

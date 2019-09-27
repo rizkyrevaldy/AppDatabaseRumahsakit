@@ -50,6 +50,7 @@ namespace AppDatabaseRumahsakit
                 {
                     databaseConnection.Close();
                 }
+                this.Close();
             }
             else if (Form1.status == 'u')
             {

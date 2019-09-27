@@ -127,9 +127,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(50, 407);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 13);
+            this.label9.Size = new System.Drawing.Size(58, 13);
             this.label9.TabIndex = 27;
-            this.label9.Text = "Golongan";
+            this.label9.Text = "Gol. Darah";
             // 
             // label8
             // 
