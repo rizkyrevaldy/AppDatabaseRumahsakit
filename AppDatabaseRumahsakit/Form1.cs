@@ -257,7 +257,6 @@ namespace AppDatabaseRumahsakit
 
         private void button2_Click(object sender, EventArgs e)
         {
-            status = 'd';
             if (tabControl1.SelectedTab.Equals(tabPage1))
             {
                 

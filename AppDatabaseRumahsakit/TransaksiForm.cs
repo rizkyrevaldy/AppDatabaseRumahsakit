@@ -31,10 +31,6 @@ namespace AppDatabaseRumahsakit
             {
 
             }
-            else if (Form1.status == 'd')
-            {
-
-            }
         }
     }
 }
