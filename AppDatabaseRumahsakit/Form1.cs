@@ -278,19 +278,77 @@ namespace AppDatabaseRumahsakit
                 finally
                 {
                     databaseConnection.Close();
+                    button3.PerformClick();
                 }
             }
             else if (tabControl1.SelectedTab.Equals(tabPage2))
             {
-                
+                string nip = listView1.SelectedItems[0].Text;
+                string query = "DELETE FROM dokter WHERE NIP=@nip";
+                try
+                {
+                    databaseConnection.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
+                    cmd.CommandTimeout = 60;
+                    cmd.Parameters.AddWithValue("@nip", nip);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data Berhasil Dihapus");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    databaseConnection.Close();
+                    button3.PerformClick();
+                }
             }
             else if (tabControl1.SelectedTab.Equals(tabPage3))
             {
-                
+                string kode = listView1.SelectedItems[0].Text;
+                string query = "DELETE FROM penyakit WHERE kode_penyakit=@kode";
+                try
+                {
+                    databaseConnection.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
+                    cmd.CommandTimeout = 60;
+                    cmd.Parameters.AddWithValue("@kode", kode);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data Berhasil Dihapus");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    databaseConnection.Close();
+                    button3.PerformClick();
+                }
             }
             else if (tabControl1.SelectedTab.Equals(tabPage4))
             {
-                
+                string no = listView1.SelectedItems[0].Text;
+                string query = "DELETE FROM transaksi WHERE no_transaksi=@no";
+                try
+                {
+                    databaseConnection.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
+                    cmd.CommandTimeout = 60;
+                    cmd.Parameters.AddWithValue("@no", no);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data Berhasil Dihapus");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    databaseConnection.Close();
+                    button3.PerformClick();
+                }
             }
         }
     }
