@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem33 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem34 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem35 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem36 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem37 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem38 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem39 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem40 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem41 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem42 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem43 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem44 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem45 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem46 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem47 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem48 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem49 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem50 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem51 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem52 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem53 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem54 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem55 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem56 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem57 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem58 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem59 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem60 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem61 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem62 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem63 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem64 = new System.Windows.Forms.ListViewItem("");
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -186,10 +186,10 @@
             this.columnHeader10,
             this.columnHeader25});
             this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem33,
-            listViewItem34,
-            listViewItem35,
-            listViewItem36});
+            listViewItem49,
+            listViewItem50,
+            listViewItem51,
+            listViewItem52});
             this.listView2.Location = new System.Drawing.Point(0, 3);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(768, 280);
@@ -251,10 +251,10 @@
             this.columnHeader23,
             this.columnHeader24});
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem37,
-            listViewItem38,
-            listViewItem39,
-            listViewItem40});
+            listViewItem53,
+            listViewItem54,
+            listViewItem55,
+            listViewItem56});
             this.listView1.Location = new System.Drawing.Point(-4, 3);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(772, 280);
@@ -338,10 +338,10 @@
             this.columnHeader17,
             this.columnHeader18});
             this.listView4.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem41,
-            listViewItem42,
-            listViewItem43,
-            listViewItem44});
+            listViewItem57,
+            listViewItem58,
+            listViewItem59,
+            listViewItem60});
             this.listView4.Location = new System.Drawing.Point(0, 3);
             this.listView4.Name = "listView4";
             this.listView4.Size = new System.Drawing.Size(378, 280);
@@ -384,10 +384,10 @@
             this.columnHeader14,
             this.columnHeader15});
             this.listView3.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem45,
-            listViewItem46,
-            listViewItem47,
-            listViewItem48});
+            listViewItem61,
+            listViewItem62,
+            listViewItem63,
+            listViewItem64});
             this.listView3.Location = new System.Drawing.Point(0, 3);
             this.listView3.Name = "listView3";
             this.listView3.Size = new System.Drawing.Size(503, 280);
@@ -473,7 +473,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "7";
+            this.Text = "App Database Rumah Sakit";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
