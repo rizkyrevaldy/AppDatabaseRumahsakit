@@ -58,11 +58,11 @@
     <Compile Include="DokterForm.Designer.cs">
       <DependentUpon>DokterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ObatForm.cs">
+    <Compile Include="TransaksiForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ObatForm.Designer.cs">
-      <DependentUpon>ObatForm.cs</DependentUpon>
+    <Compile Include="TransaksiForm.Designer.cs">
+      <DependentUpon>TransaksiForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PasienForm.cs">
       <SubType>Form</SubType>
@@ -84,8 +84,8 @@
     <EmbeddedResource Include="DokterForm.resx">
       <DependentUpon>DokterForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ObatForm.resx">
-      <DependentUpon>ObatForm.cs</DependentUpon>
+    <EmbeddedResource Include="TransaksiForm.resx">
+      <DependentUpon>TransaksiForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PasienForm.resx">
       <DependentUpon>PasienForm.cs</DependentUpon>

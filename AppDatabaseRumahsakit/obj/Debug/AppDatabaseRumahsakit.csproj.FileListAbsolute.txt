@@ -1,0 +1,14 @@
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\AppDatabaseRumahsakit.exe.config
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\AppDatabaseRumahsakit.exe
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\AppDatabaseRumahsakit.pdb
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.csprojAssemblyReference.cache
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.Form1.resources
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.DokterForm.resources
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.TransaksiForm.resources
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.PasienForm.resources
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.PenyakitForm.resources
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.Properties.Resources.resources
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.csproj.GenerateResource.cache
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.csproj.CoreCompileInputs.cache
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.exe
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.pdb

@@ -44,7 +44,25 @@ namespace AppDatabaseRumahsakit
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if(tabControl1.SelectedTab.Equals(tabPage1))
+            if (tabControl1.SelectedTab.Equals(tabPage1))
+            {
+                PasienForm form = new PasienForm();
+                form.Show();
+            }
+            else if(tabControl1.SelectedTab.Equals(tabPage2)){
+                DokterForm form = new DokterForm();
+                form.Show();
+            }
+            else if (tabControl1.SelectedTab.Equals(tabPage3))
+            {
+                PenyakitForm form = new PenyakitForm();
+                form.Show();
+            }
+            else if (tabControl1.SelectedTab.Equals(tabPage4))
+            {
+                TransaksiForm form = new TransaksiForm();
+                form.Show();
+            }
         }
     }
 }

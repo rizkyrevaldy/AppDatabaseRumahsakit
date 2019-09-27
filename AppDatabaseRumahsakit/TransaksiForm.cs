@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AppDatabaseRumahsakit
 {
-    public partial class ObatForm : Form
+    public partial class TransaksiForm : Form
     {
-        public ObatForm()
+        public TransaksiForm()
         {
             InitializeComponent();
         }
