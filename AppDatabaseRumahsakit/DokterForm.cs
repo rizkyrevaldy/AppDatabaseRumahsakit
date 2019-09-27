@@ -23,7 +23,18 @@ namespace AppDatabaseRumahsakit
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            if (Form1.status == 'c')
+            {
 
+            }
+            else if (Form1.status == 'u')
+            {
+
+            }
+            else if (Form1.status == 'd')
+            {
+
+            }
         }
 
         private void TextBox9_TextChanged(object sender, EventArgs e)

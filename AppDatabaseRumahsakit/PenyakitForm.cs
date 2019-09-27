@@ -23,7 +23,18 @@ namespace AppDatabaseRumahsakit
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (Form1.status == 'c')
+            {
 
+            }
+            else if (Form1.status == 'u')
+            {
+
+            }
+            else if (Form1.status == 'd')
+            {
+
+            }
         }
     }
 }

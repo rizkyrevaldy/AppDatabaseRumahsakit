@@ -46,8 +46,10 @@ namespace AppDatabaseRumahsakit
 
         }
 
+        public static Char status;
         private void button4_Click(object sender, EventArgs e)
         {
+            status = 'c';
             if (tabControl1.SelectedTab.Equals(tabPage1))
             {
                 PasienForm form = new PasienForm();
@@ -225,6 +227,52 @@ namespace AppDatabaseRumahsakit
                 {
                     databaseConnection.Close();
                 }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            status = 'u';
+            if (tabControl1.SelectedTab.Equals(tabPage1))
+            {
+                PasienForm form = new PasienForm();
+                form.Show();
+            }
+            else if (tabControl1.SelectedTab.Equals(tabPage2))
+            {
+                DokterForm form = new DokterForm();
+                form.Show();
+            }
+            else if (tabControl1.SelectedTab.Equals(tabPage3))
+            {
+                PenyakitForm form = new PenyakitForm();
+                form.Show();
+            }
+            else if (tabControl1.SelectedTab.Equals(tabPage4))
+            {
+                TransaksiForm form = new TransaksiForm();
+                form.Show();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            status = 'd';
+            if (tabControl1.SelectedTab.Equals(tabPage1))
+            {
+                
+            }
+            else if (tabControl1.SelectedTab.Equals(tabPage2))
+            {
+                
+            }
+            else if (tabControl1.SelectedTab.Equals(tabPage3))
+            {
+                
+            }
+            else if (tabControl1.SelectedTab.Equals(tabPage4))
+            {
+                
             }
         }
     }
