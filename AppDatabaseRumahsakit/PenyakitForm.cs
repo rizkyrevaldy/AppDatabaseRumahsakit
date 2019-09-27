@@ -50,7 +50,28 @@ namespace AppDatabaseRumahsakit
             }
             else if (Form1.status == 'u')
             {
+                string query = "UPDATE penyakit SET nama_penyakit = @nama_penyakit, golongan = @golongan WHERE kode_penyakit = @kode_penyakit";
 
+                try
+                {
+                    databaseConnection.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
+                    cmd.CommandTimeout = 60;
+                    cmd.Parameters.AddWithValue("@kode_penyakit", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@nama_penyakit", textBox2.Text);
+                    cmd.Parameters.AddWithValue("@golongan", textBox3.Text);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data berhasil diupdate");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    databaseConnection.Close();
+                }
+                this.Close();
             }
         }
     }

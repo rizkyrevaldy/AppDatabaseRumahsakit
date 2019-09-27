@@ -25,17 +25,16 @@ namespace AppDatabaseRumahsakit
         {
             if (Form1.status == 'c')
             {
-                string query = "INSERT INTO dokter (NIP, nama, jenis_kelamin, alamat, no_telp, gaji_pokok) VALUES (@nip, @nama, @jeniskelamin, @alamat,@no_telp, @gaji_pokok)"; 
-
+                string query = "INSERT INTO dokter (NIP, nama, jenis_kelamin, alamat, no_telp, gaji_pokok) VALUES (@nip, @nama, @jenis_kelamin, @alamat, @no_telp, @gaji_pokok)"; 
 
             try
                 {
                     databaseConnection.Open();
                     MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
                     cmd.CommandTimeout = 60;
-                    cmd.Parameters.AddWithValue("@id", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@nip", textBox1.Text);
                     cmd.Parameters.AddWithValue("@nama", textBox2.Text);
-                    cmd.Parameters.AddWithValue("@jeniskelamin", textBox3.Text);
+                    cmd.Parameters.AddWithValue("@jenis_kelamin", textBox3.Text);
                     cmd.Parameters.AddWithValue("@alamat", textBox4.Text);
                     cmd.Parameters.AddWithValue("@no_telp", textBox5.Text);
                     cmd.Parameters.AddWithValue("@gaji_pokok", textBox6.Text);
@@ -54,7 +53,31 @@ namespace AppDatabaseRumahsakit
             }
             else if (Form1.status == 'u')
             {
+                string query = "UPDATE dokter SET nama = @nama, jenis_kelamin = @jenis_kelamin, alamat = @alamat, no_telp = @no_telp, gaji_pokok = @gaji_pokok WHERE NIP = @nip";
 
+                try
+                {
+                    databaseConnection.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
+                    cmd.CommandTimeout = 60;
+                    cmd.Parameters.AddWithValue("@nip", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@nama", textBox2.Text);
+                    cmd.Parameters.AddWithValue("@jenis_kelamin", textBox3.Text);
+                    cmd.Parameters.AddWithValue("@alamat", textBox4.Text);
+                    cmd.Parameters.AddWithValue("@no_telp", textBox5.Text);
+                    cmd.Parameters.AddWithValue("@gaji_pokok", textBox6.Text);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data berhasil diupdate");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    databaseConnection.Close();
+                }
+                this.Close();
             }
         }
 

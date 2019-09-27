@@ -136,7 +136,7 @@ namespace AppDatabaseRumahsakit
                             listViewItem.SubItems.Add(reader["alamat"].ToString()); 
                             listViewItem.SubItems.Add(reader["no_telp"].ToString());
                             listViewItem.SubItems.Add(reader["gaji_pokok"].ToString());
-                            listView1.Items.Add(listViewItem);
+                            listView2.Items.Add(listViewItem);
                         }
                         reader.Close();
                     }
@@ -156,7 +156,7 @@ namespace AppDatabaseRumahsakit
             }
             else if (tabControl1.SelectedTab.Equals(tabPage3))
             {
-                listView3.Items.Clear();
+                listView4.Items.Clear();
                 string query = "SELECT * FROM penyakit";
                 try
                 {
@@ -172,7 +172,7 @@ namespace AppDatabaseRumahsakit
                             ListViewItem listViewItem = new ListViewItem(reader["kode_penyakit"].ToString());
                             listViewItem.SubItems.Add(reader["nama_penyakit"].ToString());
                             listViewItem.SubItems.Add(reader["golongan"].ToString()); //kode_penyakit nama_penyakit golongan
-                            listView1.Items.Add(listViewItem);
+                            listView4.Items.Add(listViewItem);
                         }
                         reader.Close();
                     }
@@ -192,7 +192,7 @@ namespace AppDatabaseRumahsakit
             }
             else if (tabControl1.SelectedTab.Equals(tabPage4))
             {
-                listView4.Items.Clear();
+                listView3.Items.Clear();
                 string query = "SELECT * FROM transaksi";
                 try
                 {
@@ -210,7 +210,7 @@ namespace AppDatabaseRumahsakit
                             listViewItem.SubItems.Add(reader["id_dokter"].ToString()); //no_transaksi id_pasien id_dokter kode_penyakit biaya_perawatan
                             listViewItem.SubItems.Add(reader["kode_penyakit"].ToString());
                             listViewItem.SubItems.Add(reader["biaya_perawatan"].ToString());
-                            listView1.Items.Add(listViewItem);
+                            listView3.Items.Add(listViewItem);
                         }
                         reader.Close();
                     }
@@ -283,7 +283,7 @@ namespace AppDatabaseRumahsakit
             }
             else if (tabControl1.SelectedTab.Equals(tabPage2))
             {
-                string nip = listView1.SelectedItems[0].Text;
+                string nip = listView2.SelectedItems[0].Text;
                 string query = "DELETE FROM dokter WHERE NIP=@nip";
                 try
                 {
@@ -306,7 +306,7 @@ namespace AppDatabaseRumahsakit
             }
             else if (tabControl1.SelectedTab.Equals(tabPage3))
             {
-                string kode = listView1.SelectedItems[0].Text;
+                string kode = listView4.SelectedItems[0].Text;
                 string query = "DELETE FROM penyakit WHERE kode_penyakit=@kode";
                 try
                 {
@@ -329,7 +329,7 @@ namespace AppDatabaseRumahsakit
             }
             else if (tabControl1.SelectedTab.Equals(tabPage4))
             {
-                string no = listView1.SelectedItems[0].Text;
+                string no = listView3.SelectedItems[0].Text;
                 string query = "DELETE FROM transaksi WHERE no_transaksi=@no";
                 try
                 {
@@ -350,6 +350,35 @@ namespace AppDatabaseRumahsakit
                     button3.PerformClick();
                 }
             }
+        }
+
+        private void pasienToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabPage1.Show();
+            tabControl1.SelectTab(0);
+        }
+
+        private void dokterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabPage2.Show();
+            tabControl1.SelectTab(1);
+        }
+
+        private void obatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabPage3.Show();
+            tabControl1.SelectTab(2);
+        }
+
+        private void penyakitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabPage4.Show();
+            tabControl1.SelectTab(3);
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

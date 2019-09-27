@@ -53,7 +53,30 @@ namespace AppDatabaseRumahsakit
             }
             else if (Form1.status == 'u')
             {
+                string query = "UPDATE transaksi SET id_pasien = @id_pasien, id_dokter = @id_dokter, kode_penyakit = @kode_penyakit ,biaya_perawatan = @biaya_perawatan, WHERE no_transaksi = @no_transaksi";
 
+                try
+                {
+                    databaseConnection.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
+                    cmd.CommandTimeout = 60;
+                    cmd.Parameters.AddWithValue("@no_transaksi", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@id_pasien", textBox2.Text);
+                    cmd.Parameters.AddWithValue("@id_dokter", textBox3.Text);
+                    cmd.Parameters.AddWithValue("@kode_penyakit", textBox4.Text);
+                    cmd.Parameters.AddWithValue("@biaya_perawatan", textBox5.Text);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data berhasil diupdate");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    databaseConnection.Close();
+                }
+                this.Close();
             }
         }
     }

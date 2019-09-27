@@ -25,7 +25,7 @@ namespace AppDatabaseRumahsakit
         {
             if (Form1.status == 'c')
             {
-                string query = "INSERT INTO pasien (ID, nama, jenis_kelamin, alamat, no_telp, umur, berat_badan, tinggi_badan, golongan_darah) VALUES(@id, @nama, @jeniskelamin, @alamat, @no_telp, @umur, @beratbadan, @tinggibadan, @golongandarah)"; 
+                string query = "INSERT INTO pasien (ID, nama, jenis_kelamin, alamat, no_telp, umur, berat_badan, tinggi_badan, golongan_darah) VALUES(@id, @nama, @jenis_kelamin, @alamat, @no_telp, @umur, @berat_badan, @tinggi_badan, @golongan_darah)"; 
 
 
             try
@@ -35,13 +35,13 @@ namespace AppDatabaseRumahsakit
                     cmd.CommandTimeout = 60;
                     cmd.Parameters.AddWithValue("@id", textBox1.Text);
                     cmd.Parameters.AddWithValue("@nama", textBox2.Text);
-                    cmd.Parameters.AddWithValue("@jeniskelamin", textBox3.Text);
+                    cmd.Parameters.AddWithValue("@jenis_kelamin", textBox3.Text);
                     cmd.Parameters.AddWithValue("@alamat", textBox4.Text);
                     cmd.Parameters.AddWithValue("@no_telp", textBox5.Text);
                     cmd.Parameters.AddWithValue("@umur", textBox6.Text);
-                    cmd.Parameters.AddWithValue("@beratbadan", textBox7.Text);
-                    cmd.Parameters.AddWithValue("@tinggibadan", textBox8.Text);
-                    cmd.Parameters.AddWithValue("@golongandarah", textBox9.Text);
+                    cmd.Parameters.AddWithValue("@berat_badan", textBox7.Text);
+                    cmd.Parameters.AddWithValue("@tinggi_badan", textBox8.Text);
+                    cmd.Parameters.AddWithValue("@golongan_darah", textBox9.Text);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Data berhasil ditambahkan");
                 }
@@ -57,7 +57,34 @@ namespace AppDatabaseRumahsakit
             }
             else if (Form1.status == 'u')
             {
+                string query = "UPDATE pasien SET nama = @nama, jenis_kelamin = @jenis_kelamin, alamat = @alamat, no_telp = @no_telp, umur = @umur, berat_badan = @berat_badan, tinggi_badan = @tinggi_badan, golongan_darah = @golongan_darah  WHERE ID = @id";
 
+                try
+                {
+                    databaseConnection.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
+                    cmd.CommandTimeout = 60;
+                    cmd.Parameters.AddWithValue("@id", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@nama", textBox2.Text);
+                    cmd.Parameters.AddWithValue("@jenis_kelamin", textBox3.Text);
+                    cmd.Parameters.AddWithValue("@alamat", textBox4.Text);
+                    cmd.Parameters.AddWithValue("@no_telp", textBox5.Text);
+                    cmd.Parameters.AddWithValue("@umur", textBox6.Text);
+                    cmd.Parameters.AddWithValue("@berat_badan", textBox7.Text);
+                    cmd.Parameters.AddWithValue("@tinggi_badan", textBox8.Text);
+                    cmd.Parameters.AddWithValue("@golongan_darah", textBox9.Text);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data berhasil diupdate");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    databaseConnection.Close();
+                }
+                this.Close();
             }
         }
     }
