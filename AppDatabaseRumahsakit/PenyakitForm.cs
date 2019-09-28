@@ -32,9 +32,9 @@ namespace AppDatabaseRumahsakit
                     databaseConnection.Open();
                     MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
                     cmd.CommandTimeout = 60;
-                    cmd.Parameters.AddWithValue("@kode_penyakit", textBox1.Text);
-                    cmd.Parameters.AddWithValue("@nama_penyakit", textBox2.Text);
-                    cmd.Parameters.AddWithValue("@golongan", textBox3.Text);
+                    cmd.Parameters.AddWithValue("@kode_penyakit", tbKode.Text);
+                    cmd.Parameters.AddWithValue("@nama_penyakit", tbNama.Text);
+                    cmd.Parameters.AddWithValue("@golongan", tbGol.Text);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Data berhasil ditambahkan");
                 }
@@ -57,9 +57,9 @@ namespace AppDatabaseRumahsakit
                     databaseConnection.Open();
                     MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
                     cmd.CommandTimeout = 60;
-                    cmd.Parameters.AddWithValue("@kode_penyakit", textBox1.Text);
-                    cmd.Parameters.AddWithValue("@nama_penyakit", textBox2.Text);
-                    cmd.Parameters.AddWithValue("@golongan", textBox3.Text);
+                    cmd.Parameters.AddWithValue("@kode_penyakit", tbKode.Text);
+                    cmd.Parameters.AddWithValue("@nama_penyakit", tbNama.Text);
+                    cmd.Parameters.AddWithValue("@golongan", tbGol.Text);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Data berhasil diupdate");
                 }
