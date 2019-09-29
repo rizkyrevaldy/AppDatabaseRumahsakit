@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbNo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -36,27 +36,28 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbPasien = new System.Windows.Forms.TextBox();
+            this.tbDokter = new System.Windows.Forms.TextBox();
+            this.tbKodePenyakit = new System.Windows.Forms.TextBox();
+            this.tbBiaya = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tbNo
             // 
-            this.textBox1.Location = new System.Drawing.Point(3, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(122, 20);
-            this.textBox1.TabIndex = 0;
+            this.tbNo.Location = new System.Drawing.Point(3, 3);
+            this.tbNo.Margin = new System.Windows.Forms.Padding(3, 3, 3, 15);
+            this.tbNo.Name = "tbNo";
+            this.tbNo.Size = new System.Drawing.Size(122, 20);
+            this.tbNo.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 13);
             this.label1.TabIndex = 1;
@@ -72,14 +73,14 @@
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 36);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(105, 137);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(105, 187);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 32);
-            this.label2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 7);
+            this.label2.Location = new System.Drawing.Point(3, 45);
+            this.label2.Margin = new System.Windows.Forms.Padding(3, 22, 3, 3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 2;
@@ -88,8 +89,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 57);
-            this.label3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.label3.Location = new System.Drawing.Point(3, 83);
+            this.label3.Margin = new System.Windows.Forms.Padding(3, 22, 3, 3);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 3;
@@ -98,8 +99,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 84);
-            this.label4.Margin = new System.Windows.Forms.Padding(3, 9, 3, 7);
+            this.label4.Location = new System.Drawing.Point(3, 121);
+            this.label4.Margin = new System.Windows.Forms.Padding(3, 22, 3, 3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 13);
             this.label4.TabIndex = 4;
@@ -108,8 +109,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 109);
-            this.label5.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
+            this.label5.Location = new System.Drawing.Point(3, 159);
+            this.label5.Margin = new System.Windows.Forms.Padding(3, 22, 3, 3);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(33, 13);
             this.label5.TabIndex = 5;
@@ -117,48 +118,51 @@
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Controls.Add(this.textBox1);
-            this.flowLayoutPanel2.Controls.Add(this.textBox2);
-            this.flowLayoutPanel2.Controls.Add(this.textBox3);
-            this.flowLayoutPanel2.Controls.Add(this.textBox4);
-            this.flowLayoutPanel2.Controls.Add(this.textBox5);
+            this.flowLayoutPanel2.Controls.Add(this.tbNo);
+            this.flowLayoutPanel2.Controls.Add(this.tbPasien);
+            this.flowLayoutPanel2.Controls.Add(this.tbDokter);
+            this.flowLayoutPanel2.Controls.Add(this.tbKodePenyakit);
+            this.flowLayoutPanel2.Controls.Add(this.tbBiaya);
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(123, 36);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(142, 137);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(142, 187);
             this.flowLayoutPanel2.TabIndex = 3;
             // 
-            // textBox2
+            // tbPasien
             // 
-            this.textBox2.Location = new System.Drawing.Point(3, 29);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(122, 20);
-            this.textBox2.TabIndex = 1;
+            this.tbPasien.Location = new System.Drawing.Point(3, 41);
+            this.tbPasien.Margin = new System.Windows.Forms.Padding(3, 3, 3, 15);
+            this.tbPasien.Name = "tbPasien";
+            this.tbPasien.Size = new System.Drawing.Size(122, 20);
+            this.tbPasien.TabIndex = 1;
             // 
-            // textBox3
+            // tbDokter
             // 
-            this.textBox3.Location = new System.Drawing.Point(3, 55);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(122, 20);
-            this.textBox3.TabIndex = 2;
+            this.tbDokter.Location = new System.Drawing.Point(3, 79);
+            this.tbDokter.Margin = new System.Windows.Forms.Padding(3, 3, 3, 15);
+            this.tbDokter.Name = "tbDokter";
+            this.tbDokter.Size = new System.Drawing.Size(122, 20);
+            this.tbDokter.TabIndex = 2;
             // 
-            // textBox4
+            // tbKodePenyakit
             // 
-            this.textBox4.Location = new System.Drawing.Point(3, 81);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(122, 20);
-            this.textBox4.TabIndex = 3;
+            this.tbKodePenyakit.Location = new System.Drawing.Point(3, 117);
+            this.tbKodePenyakit.Margin = new System.Windows.Forms.Padding(3, 3, 3, 15);
+            this.tbKodePenyakit.Name = "tbKodePenyakit";
+            this.tbKodePenyakit.Size = new System.Drawing.Size(122, 20);
+            this.tbKodePenyakit.TabIndex = 3;
             // 
-            // textBox5
+            // tbBiaya
             // 
-            this.textBox5.Location = new System.Drawing.Point(3, 107);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(122, 20);
-            this.textBox5.TabIndex = 4;
+            this.tbBiaya.Location = new System.Drawing.Point(3, 155);
+            this.tbBiaya.Name = "tbBiaya";
+            this.tbBiaya.Size = new System.Drawing.Size(122, 20);
+            this.tbBiaya.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(190, 185);
+            this.button1.Location = new System.Drawing.Point(190, 229);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -170,7 +174,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(288, 223);
+            this.ClientSize = new System.Drawing.Size(288, 309);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -186,18 +190,18 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbNo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbPasien;
+        private System.Windows.Forms.TextBox tbDokter;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbKodePenyakit;
+        private System.Windows.Forms.TextBox tbBiaya;
     }
 }

@@ -32,12 +32,12 @@ namespace AppDatabaseRumahsakit
                     databaseConnection.Open();
                     MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
                     cmd.CommandTimeout = 60;
-                    cmd.Parameters.AddWithValue("@nip", textBox1.Text);
-                    cmd.Parameters.AddWithValue("@nama", textBox2.Text);
-                    cmd.Parameters.AddWithValue("@jenis_kelamin", textBox3.Text);
-                    cmd.Parameters.AddWithValue("@alamat", textBox4.Text);
-                    cmd.Parameters.AddWithValue("@no_telp", textBox5.Text);
-                    cmd.Parameters.AddWithValue("@gaji_pokok", textBox6.Text);
+                    cmd.Parameters.AddWithValue("@nip", tbNIP.Text);
+                    cmd.Parameters.AddWithValue("@nama", tbNama.Text);
+                    cmd.Parameters.AddWithValue("@jenis_kelamin", cbJK.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@alamat", tbAlamat.Text);
+                    cmd.Parameters.AddWithValue("@no_telp", tbTelp.Text);
+                    cmd.Parameters.AddWithValue("@gaji_pokok", tbGaji.Text);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Data berhasil ditambahkan");
                 }
@@ -60,12 +60,12 @@ namespace AppDatabaseRumahsakit
                     databaseConnection.Open();
                     MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
                     cmd.CommandTimeout = 60;
-                    cmd.Parameters.AddWithValue("@nip", textBox1.Text);
-                    cmd.Parameters.AddWithValue("@nama", textBox2.Text);
-                    cmd.Parameters.AddWithValue("@jenis_kelamin", textBox3.Text);
-                    cmd.Parameters.AddWithValue("@alamat", textBox4.Text);
-                    cmd.Parameters.AddWithValue("@no_telp", textBox5.Text);
-                    cmd.Parameters.AddWithValue("@gaji_pokok", textBox6.Text);
+                    cmd.Parameters.AddWithValue("@nip", tbNIP.Text);
+                    cmd.Parameters.AddWithValue("@nama", tbNama.Text);
+                    cmd.Parameters.AddWithValue("@jenis_kelamin", cbJK.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@alamat", tbAlamat.Text);
+                    cmd.Parameters.AddWithValue("@no_telp", tbTelp.Text);
+                    cmd.Parameters.AddWithValue("@gaji_pokok", tbGaji.Text);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Data berhasil diupdate");
                 }
@@ -79,101 +79,6 @@ namespace AppDatabaseRumahsakit
                 }
                 this.Close();
             }
-        }
-
-        private void TextBox9_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DokterForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

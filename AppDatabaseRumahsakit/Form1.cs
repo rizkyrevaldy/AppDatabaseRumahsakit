@@ -19,31 +19,7 @@ namespace AppDatabaseRumahsakit
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listView4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage4_Click(object sender, EventArgs e)
-        {
-
+            button3.PerformClick();
         }
 
         public static Char status;
@@ -379,6 +355,11 @@ namespace AppDatabaseRumahsakit
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            button3.PerformClick();
         }
     }
 }

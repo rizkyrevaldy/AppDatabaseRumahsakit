@@ -33,11 +33,11 @@ namespace AppDatabaseRumahsakit
                     databaseConnection.Open();
                     MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
                     cmd.CommandTimeout = 60;
-                    cmd.Parameters.AddWithValue("@no_transaksi", textBox1.Text);
-                    cmd.Parameters.AddWithValue("@id_pasien", textBox2.Text);
-                    cmd.Parameters.AddWithValue("@id_dokter", textBox3.Text);
-                    cmd.Parameters.AddWithValue("@kode_penyakit", textBox4.Text);
-                    cmd.Parameters.AddWithValue("@biaya_perawatan", textBox5.Text);
+                    cmd.Parameters.AddWithValue("@no_transaksi", tbNo.Text);
+                    cmd.Parameters.AddWithValue("@id_pasien", tbPasien.Text);
+                    cmd.Parameters.AddWithValue("@id_dokter", tbDokter.Text);
+                    cmd.Parameters.AddWithValue("@kode_penyakit", tbKodePenyakit.Text);
+                    cmd.Parameters.AddWithValue("@biaya_perawatan", tbBiaya.Text);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Data berhasil ditambahkan");
                 }
@@ -60,11 +60,11 @@ namespace AppDatabaseRumahsakit
                     databaseConnection.Open();
                     MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
                     cmd.CommandTimeout = 60;
-                    cmd.Parameters.AddWithValue("@no_transaksi", textBox1.Text);
-                    cmd.Parameters.AddWithValue("@id_pasien", textBox2.Text);
-                    cmd.Parameters.AddWithValue("@id_dokter", textBox3.Text);
-                    cmd.Parameters.AddWithValue("@kode_penyakit", textBox4.Text);
-                    cmd.Parameters.AddWithValue("@biaya_perawatan", textBox5.Text);
+                    cmd.Parameters.AddWithValue("@no_transaksi", tbNo.Text);
+                    cmd.Parameters.AddWithValue("@id_pasien", tbPasien.Text);
+                    cmd.Parameters.AddWithValue("@id_dokter", tbDokter.Text);
+                    cmd.Parameters.AddWithValue("@kode_penyakit", tbKodePenyakit.Text);
+                    cmd.Parameters.AddWithValue("@biaya_perawatan", tbBiaya.Text);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Data berhasil diupdate");
                 }
