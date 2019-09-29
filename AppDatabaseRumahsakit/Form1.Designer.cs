@@ -475,7 +475,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "App Database Rumah Sakit";
-            this.Activated += new System.EventHandler(this.Form1_Activated);
+            //this.Activated += new System.EventHandler(this.Form1_Activated);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabPage2.ResumeLayout(false);

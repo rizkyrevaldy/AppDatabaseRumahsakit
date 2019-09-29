@@ -19,7 +19,7 @@ namespace AppDatabaseRumahsakit
         public Form1()
         {
             InitializeComponent();
-            button3.PerformClick();
+            //button3.PerformClick();
         }
 
         public static Char status;
@@ -357,10 +357,11 @@ namespace AppDatabaseRumahsakit
             this.Close();
         }
 
-        private void Form1_Activated(object sender, EventArgs e)
+        /* private void Form1_Activated(object sender, EventArgs e)
         {
             button3.PerformClick();
         }
+        */
     }
 }
 
