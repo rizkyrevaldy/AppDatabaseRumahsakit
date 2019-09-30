@@ -19,13 +19,45 @@ namespace AppDatabaseRumahsakit
         public PasienForm()
         {
             InitializeComponent();
+            if (Form1.status == 'u')
+            {
+                string select = "SELECT * FROM pasien WHERE id=@id";
+                try
+                {
+                    databaseConnection.Open();
+                    MySqlCommand slt = new MySqlCommand(select, databaseConnection);
+                    slt.CommandTimeout = 60;
+                    slt.Parameters.AddWithValue("@id", Form1.id);
+                    MySqlDataReader reader = slt.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        tbNama.Text = reader["nama"].ToString();
+                        cbJK.SelectedItem = reader["jenis_kelamin"].ToString();
+                        tbAlamat.Text = reader["alamat"].ToString();
+                        tbTelp.Text = reader["no_telp"].ToString();
+                        tbUmur.Text = reader["umur"].ToString();
+                        tbBB.Text = reader["berat_badan"].ToString();
+                        tbTB.Text = reader["tinggi_badan"].ToString();
+                        cbGD.SelectedItem = reader["golongan_darah"].ToString();
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    databaseConnection.Close();
+                }
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (Form1.status == 'c')
             {
-                string query = "INSERT INTO pasien (ID, nama, jenis_kelamin, alamat, no_telp, umur, berat_badan, tinggi_badan, golongan_darah) VALUES(@id, @nama, @jenis_kelamin, @alamat, @no_telp, @umur, @berat_badan, @tinggi_badan, @golongan_darah)"; 
+                string query = "INSERT INTO pasien (nama, jenis_kelamin, alamat, no_telp, umur, berat_badan, tinggi_badan, golongan_darah) VALUES(@nama, @jenis_kelamin, @alamat, @no_telp, @umur, @berat_badan, @tinggi_badan, @golongan_darah)"; 
 
 
             try
@@ -33,7 +65,6 @@ namespace AppDatabaseRumahsakit
                     databaseConnection.Open();
                     MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
                     cmd.CommandTimeout = 60;
-                    cmd.Parameters.AddWithValue("@id", tbID.Text);
                     cmd.Parameters.AddWithValue("@nama", tbNama.Text);
                     cmd.Parameters.AddWithValue("@jenis_kelamin", cbJK.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@alamat", tbAlamat.Text);
@@ -57,14 +88,12 @@ namespace AppDatabaseRumahsakit
             }
             else if (Form1.status == 'u')
             {
-                string query = "UPDATE pasien SET nama = @nama, jenis_kelamin = @jenis_kelamin, alamat = @alamat, no_telp = @no_telp, umur = @umur, berat_badan = @berat_badan, tinggi_badan = @tinggi_badan, golongan_darah = @golongan_darah  WHERE ID = @id";
-
                 try
                 {
-                    databaseConnection.Open();
+                string query = "UPDATE pasien SET nama = @nama, jenis_kelamin = @jenis_kelamin, alamat = @alamat, no_telp = @no_telp, umur = @umur, berat_badan = @berat_badan, tinggi_badan = @tinggi_badan, golongan_darah = @golongan_darah  WHERE ID = @id";
                     MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
                     cmd.CommandTimeout = 60;
-                    cmd.Parameters.AddWithValue("@id", tbID.Text);
+                    cmd.Parameters.AddWithValue("@id", Form1.id);
                     cmd.Parameters.AddWithValue("@nama", tbNama.Text);
                     cmd.Parameters.AddWithValue("@jenis_kelamin", cbJK.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@alamat", tbAlamat.Text);

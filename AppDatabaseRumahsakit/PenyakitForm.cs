@@ -19,6 +19,33 @@ namespace AppDatabaseRumahsakit
         public PenyakitForm()
         {
             InitializeComponent();
+            if (Form1.status == 'u')
+            {
+                string select = "SELECT * FROM penyakit WHERE kode_penyakit=@kode";
+                try
+                {
+                    databaseConnection.Open();
+                    MySqlCommand slt = new MySqlCommand(select, databaseConnection);
+                    slt.CommandTimeout = 60;
+                    slt.Parameters.AddWithValue("@kode", Form1.id);
+                    MySqlDataReader reader = slt.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        tbKode.Text = reader["kode_penyakit"].ToString();
+                        tbNama.Text = reader["nama_penyakit"].ToString();
+                        tbGol.Text = reader["golongan"].ToString();
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    databaseConnection.Close();
+                }
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

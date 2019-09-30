@@ -183,7 +183,7 @@ namespace AppDatabaseRumahsakit
                         {
                             ListViewItem listViewItem = new ListViewItem(reader["no_transaksi"].ToString());
                             listViewItem.SubItems.Add(reader["id_pasien"].ToString());
-                            listViewItem.SubItems.Add(reader["id_dokter"].ToString()); //no_transaksi id_pasien id_dokter kode_penyakit biaya_perawatan
+                            listViewItem.SubItems.Add(reader["nip_dokter"].ToString()); //no_transaksi id_pasien nip_dokter kode_penyakit biaya_perawatan
                             listViewItem.SubItems.Add(reader["kode_penyakit"].ToString());
                             listViewItem.SubItems.Add(reader["biaya_perawatan"].ToString());
                             listView3.Items.Add(listViewItem);
@@ -206,26 +206,31 @@ namespace AppDatabaseRumahsakit
             }
         }
 
+        public static string id;
         private void button1_Click(object sender, EventArgs e)
         {
             status = 'u';
             if (tabControl1.SelectedTab.Equals(tabPage1))
             {
+                id = listView1.SelectedItems[0].Text;
                 PasienForm form = new PasienForm();
                 form.Show();
             }
             else if (tabControl1.SelectedTab.Equals(tabPage2))
             {
+                id = listView2.SelectedItems[0].Text;
                 DokterForm form = new DokterForm();
                 form.Show();
             }
             else if (tabControl1.SelectedTab.Equals(tabPage3))
             {
+                id = listView4.SelectedItems[0].Text;
                 PenyakitForm form = new PenyakitForm();
                 form.Show();
             }
             else if (tabControl1.SelectedTab.Equals(tabPage4))
             {
+                id = listView3.SelectedItems[0].Text;
                 TransaksiForm form = new TransaksiForm();
                 form.Show();
             }

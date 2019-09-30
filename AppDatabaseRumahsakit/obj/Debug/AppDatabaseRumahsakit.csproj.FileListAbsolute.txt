@@ -32,3 +32,9 @@ C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj
 C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.csproj.CopyComplete
 C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.exe
 C:\Users\Rizky Revaldy\Documents\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.pdb
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\MySql.Data.dll
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\Google.Protobuf.dll
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\Renci.SshNet.dll
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\bin\Debug\MySql.Data.xml
+C:\Users\Av\Source\Repos\rizkyrevaldy\AppDatabaseRumahsakit\AppDatabaseRumahsakit\obj\Debug\AppDatabaseRumahsakit.csproj.CopyComplete

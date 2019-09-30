@@ -37,25 +37,23 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.cbGD = new System.Windows.Forms.ComboBox();
             this.tbNama = new System.Windows.Forms.TextBox();
-            this.tbID = new System.Windows.Forms.TextBox();
             this.cbJK = new System.Windows.Forms.ComboBox();
             this.tbAlamat = new System.Windows.Forms.TextBox();
             this.tbTelp = new System.Windows.Forms.TextBox();
             this.tbUmur = new System.Windows.Forms.TextBox();
             this.tbBB = new System.Windows.Forms.TextBox();
             this.tbTB = new System.Windows.Forms.TextBox();
+            this.cbGD = new System.Windows.Forms.ComboBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(270, 367);
+            this.button1.Location = new System.Drawing.Point(270, 340);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 37;
@@ -66,7 +64,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 310);
+            this.label9.Location = new System.Drawing.Point(3, 273);
             this.label9.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(58, 13);
@@ -76,7 +74,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 272);
+            this.label8.Location = new System.Drawing.Point(3, 235);
             this.label8.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(70, 13);
@@ -86,7 +84,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 234);
+            this.label7.Location = new System.Drawing.Point(3, 197);
             this.label7.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 13);
@@ -96,7 +94,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 196);
+            this.label6.Location = new System.Drawing.Point(3, 159);
             this.label6.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(32, 13);
@@ -106,7 +104,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 158);
+            this.label5.Location = new System.Drawing.Point(3, 121);
             this.label5.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 13);
@@ -116,7 +114,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 120);
+            this.label4.Location = new System.Drawing.Point(3, 83);
             this.label4.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 13);
@@ -126,7 +124,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 82);
+            this.label3.Location = new System.Drawing.Point(3, 45);
             this.label3.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 13);
@@ -143,20 +141,9 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "Nama";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 44);
-            this.label1.Margin = new System.Windows.Forms.Padding(3, 24, 3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "ID";
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.label2);
-            this.flowLayoutPanel1.Controls.Add(this.label1);
             this.flowLayoutPanel1.Controls.Add(this.label3);
             this.flowLayoutPanel1.Controls.Add(this.label4);
             this.flowLayoutPanel1.Controls.Add(this.label5);
@@ -167,13 +154,12 @@
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(47, 22);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(92, 337);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(92, 312);
             this.flowLayoutPanel1.TabIndex = 38;
             // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.tbNama);
-            this.flowLayoutPanel2.Controls.Add(this.tbID);
             this.flowLayoutPanel2.Controls.Add(this.cbJK);
             this.flowLayoutPanel2.Controls.Add(this.tbAlamat);
             this.flowLayoutPanel2.Controls.Add(this.tbTelp);
@@ -184,21 +170,8 @@
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(145, 22);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(200, 337);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(200, 312);
             this.flowLayoutPanel2.TabIndex = 39;
-            // 
-            // cbGD
-            // 
-            this.cbGD.FormattingEnabled = true;
-            this.cbGD.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "AB",
-            "O"});
-            this.cbGD.Location = new System.Drawing.Point(3, 308);
-            this.cbGD.Name = "cbGD";
-            this.cbGD.Size = new System.Drawing.Size(185, 21);
-            this.cbGD.TabIndex = 40;
             // 
             // tbNama
             // 
@@ -208,21 +181,13 @@
             this.tbNama.Size = new System.Drawing.Size(185, 20);
             this.tbNama.TabIndex = 2;
             // 
-            // tbID
-            // 
-            this.tbID.Location = new System.Drawing.Point(3, 41);
-            this.tbID.Margin = new System.Windows.Forms.Padding(3, 3, 3, 15);
-            this.tbID.Name = "tbID";
-            this.tbID.Size = new System.Drawing.Size(185, 20);
-            this.tbID.TabIndex = 3;
-            // 
             // cbJK
             // 
             this.cbJK.FormattingEnabled = true;
             this.cbJK.Items.AddRange(new object[] {
             "L",
             "P"});
-            this.cbJK.Location = new System.Drawing.Point(3, 79);
+            this.cbJK.Location = new System.Drawing.Point(3, 41);
             this.cbJK.Margin = new System.Windows.Forms.Padding(3, 3, 3, 15);
             this.cbJK.Name = "cbJK";
             this.cbJK.Size = new System.Drawing.Size(185, 21);
@@ -230,7 +195,7 @@
             // 
             // tbAlamat
             // 
-            this.tbAlamat.Location = new System.Drawing.Point(3, 118);
+            this.tbAlamat.Location = new System.Drawing.Point(3, 80);
             this.tbAlamat.Margin = new System.Windows.Forms.Padding(3, 3, 3, 15);
             this.tbAlamat.Name = "tbAlamat";
             this.tbAlamat.Size = new System.Drawing.Size(185, 20);
@@ -238,7 +203,7 @@
             // 
             // tbTelp
             // 
-            this.tbTelp.Location = new System.Drawing.Point(3, 156);
+            this.tbTelp.Location = new System.Drawing.Point(3, 118);
             this.tbTelp.Margin = new System.Windows.Forms.Padding(3, 3, 3, 15);
             this.tbTelp.Name = "tbTelp";
             this.tbTelp.Size = new System.Drawing.Size(185, 20);
@@ -246,7 +211,7 @@
             // 
             // tbUmur
             // 
-            this.tbUmur.Location = new System.Drawing.Point(3, 194);
+            this.tbUmur.Location = new System.Drawing.Point(3, 156);
             this.tbUmur.Margin = new System.Windows.Forms.Padding(3, 3, 3, 15);
             this.tbUmur.Name = "tbUmur";
             this.tbUmur.Size = new System.Drawing.Size(185, 20);
@@ -254,7 +219,7 @@
             // 
             // tbBB
             // 
-            this.tbBB.Location = new System.Drawing.Point(3, 232);
+            this.tbBB.Location = new System.Drawing.Point(3, 194);
             this.tbBB.Margin = new System.Windows.Forms.Padding(3, 3, 3, 15);
             this.tbBB.Name = "tbBB";
             this.tbBB.Size = new System.Drawing.Size(185, 20);
@@ -262,11 +227,24 @@
             // 
             // tbTB
             // 
-            this.tbTB.Location = new System.Drawing.Point(3, 270);
+            this.tbTB.Location = new System.Drawing.Point(3, 232);
             this.tbTB.Margin = new System.Windows.Forms.Padding(3, 3, 3, 15);
             this.tbTB.Name = "tbTB";
             this.tbTB.Size = new System.Drawing.Size(185, 20);
             this.tbTB.TabIndex = 46;
+            // 
+            // cbGD
+            // 
+            this.cbGD.FormattingEnabled = true;
+            this.cbGD.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "AB",
+            "O"});
+            this.cbGD.Location = new System.Drawing.Point(3, 270);
+            this.cbGD.Name = "cbGD";
+            this.cbGD.Size = new System.Drawing.Size(185, 21);
+            this.cbGD.TabIndex = 40;
             // 
             // PasienForm
             // 
@@ -297,12 +275,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.ComboBox cbGD;
         private System.Windows.Forms.TextBox tbNama;
-        private System.Windows.Forms.TextBox tbID;
         private System.Windows.Forms.ComboBox cbJK;
         private System.Windows.Forms.TextBox tbAlamat;
         private System.Windows.Forms.TextBox tbTelp;

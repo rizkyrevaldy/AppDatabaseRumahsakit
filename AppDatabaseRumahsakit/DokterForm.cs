@@ -19,6 +19,36 @@ namespace AppDatabaseRumahsakit
         public DokterForm()
         {
             InitializeComponent();
+            if (Form1.status == 'u')
+            {
+                string select = "SELECT * FROM dokter WHERE nip=@nip";
+                try
+                {
+                    databaseConnection.Open();
+                    MySqlCommand slt = new MySqlCommand(select, databaseConnection);
+                    slt.CommandTimeout = 60;
+                    slt.Parameters.AddWithValue("@nip", Form1.id);
+                    MySqlDataReader reader = slt.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        tbNIP.Text = reader["nip"].ToString();
+                        tbNama.Text = reader["nama"].ToString();
+                        cbJK.SelectedItem = reader["jenis_kelamin"].ToString();
+                        tbAlamat.Text = reader["alamat"].ToString();
+                        tbTelp.Text = reader["no_telp"].ToString();
+                        tbGaji.Text = reader["gaji_pokok"].ToString();
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    databaseConnection.Close();
+                }
+            }
         }
 
         private void Button1_Click(object sender, EventArgs e)
