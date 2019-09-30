@@ -21,7 +21,7 @@ namespace AppDatabaseRumahsakit
             InitializeComponent();
             if (Form1.status == 'c')
             {
-                string select = "SELECT nama_penyakit FROM penyakit";
+                string select = "SELECT kode_penyakit FROM penyakit";
                 string select2 = "SELECT ID FROM pasien";
                 string select3 = "SELECT NIP FROM dokter";
 
@@ -37,7 +37,7 @@ namespace AppDatabaseRumahsakit
                     MySqlDataReader reader = slt.ExecuteReader();
                     while (reader.Read())
                     {
-                        cbKode.Items.Add(reader["nama_penyakit"].ToString());
+                        cbPenyakit.Items.Add(reader["kode_penyakit"].ToString());
                     }
                     reader.Close();
                     reader = slt2.ExecuteReader();
@@ -77,7 +77,7 @@ namespace AppDatabaseRumahsakit
                     {
                         cbPasien.SelectedItem = reader["id_pasien"].ToString();
                         cbDokter.SelectedItem = reader["nip_dokter"].ToString();
-                        cbKode.SelectedItem = reader["kode_penyakit"].ToString();
+                        cbPenyakit.SelectedItem = reader["kode_penyakit"].ToString();
                         tbBiaya.Text = reader["biaya_perawatan"].ToString();
                     }
                     reader.Close();
@@ -108,7 +108,7 @@ namespace AppDatabaseRumahsakit
                     cmd.CommandTimeout = 60;
                     cmd.Parameters.AddWithValue("@id_pasien", cbPasien.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@nip_dokter", cbDokter.SelectedItem.ToString());
-                    cmd.Parameters.AddWithValue("@kode_penyakit", cbKode.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@kode_penyakit", cbPenyakit.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@biaya_perawatan", tbBiaya.Text);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Data berhasil ditambahkan");
@@ -135,7 +135,7 @@ namespace AppDatabaseRumahsakit
                     cmd.Parameters.AddWithValue("@no_transaksi", Form1.id);
                     cmd.Parameters.AddWithValue("@id_pasien", cbPasien.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@nip_dokter", cbDokter.SelectedItem.ToString());
-                    cmd.Parameters.AddWithValue("@kode_penyakit", cbKode.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@kode_penyakit", cbPenyakit.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@biaya_perawatan", tbBiaya.Text);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Data berhasil diupdate");

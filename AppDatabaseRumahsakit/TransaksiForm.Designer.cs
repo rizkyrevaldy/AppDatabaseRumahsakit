@@ -36,7 +36,7 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.tbBiaya = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.cbKode = new System.Windows.Forms.ComboBox();
+            this.cbPenyakit = new System.Windows.Forms.ComboBox();
             this.cbPasien = new System.Windows.Forms.ComboBox();
             this.cbDokter = new System.Windows.Forms.ComboBox();
             this.flowLayoutPanel1.SuspendLayout();
@@ -81,9 +81,9 @@
             this.label4.Location = new System.Drawing.Point(3, 83);
             this.label4.Margin = new System.Windows.Forms.Padding(3, 22, 3, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 13);
+            this.label4.Size = new System.Drawing.Size(76, 13);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Nama Penyakit";
+            this.label4.Text = "Kode Penyakit";
             // 
             // label5
             // 
@@ -99,7 +99,7 @@
             // 
             this.flowLayoutPanel2.Controls.Add(this.cbPasien);
             this.flowLayoutPanel2.Controls.Add(this.cbDokter);
-            this.flowLayoutPanel2.Controls.Add(this.cbKode);
+            this.flowLayoutPanel2.Controls.Add(this.cbPenyakit);
             this.flowLayoutPanel2.Controls.Add(this.tbBiaya);
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(123, 36);
@@ -124,15 +124,15 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cbKode
+            // cbPenyakit
             // 
-            this.cbKode.FormattingEnabled = true;
-            this.cbKode.Location = new System.Drawing.Point(3, 81);
-            this.cbKode.Margin = new System.Windows.Forms.Padding(3, 3, 3, 15);
-            this.cbKode.MaxDropDownItems = 100;
-            this.cbKode.Name = "cbKode";
-            this.cbKode.Size = new System.Drawing.Size(121, 21);
-            this.cbKode.TabIndex = 5;
+            this.cbPenyakit.FormattingEnabled = true;
+            this.cbPenyakit.Location = new System.Drawing.Point(3, 81);
+            this.cbPenyakit.Margin = new System.Windows.Forms.Padding(3, 3, 3, 15);
+            this.cbPenyakit.MaxDropDownItems = 100;
+            this.cbPenyakit.Name = "cbPenyakit";
+            this.cbPenyakit.Size = new System.Drawing.Size(121, 21);
+            this.cbPenyakit.TabIndex = 5;
             // 
             // cbPasien
             // 
@@ -181,7 +181,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbBiaya;
-        private System.Windows.Forms.ComboBox cbKode;
+        private System.Windows.Forms.ComboBox cbPenyakit;
         private System.Windows.Forms.ComboBox cbPasien;
         private System.Windows.Forms.ComboBox cbDokter;
     }
