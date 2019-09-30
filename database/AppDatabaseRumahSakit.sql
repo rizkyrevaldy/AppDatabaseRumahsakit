@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server version:               10.4.6-MariaDB - mariadb.org binary distribution
--- Server OS:                    Win64
--- HeidiSQL Version:             10.2.0.5599
+-- Server version:               10.1.37-MariaDB - mariadb.org binary distribution
+-- Server OS:                    Win32
+-- HeidiSQL Version:             10.1.0.5464
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -27,10 +27,13 @@ CREATE TABLE IF NOT EXISTS `dokter` (
   PRIMARY KEY (`NIP`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table rumah_sakit.dokter: ~1 rows (approximately)
+-- Dumping data for table rumah_sakit.dokter: ~4 rows (approximately)
 /*!40000 ALTER TABLE `dokter` DISABLE KEYS */;
-INSERT INTO `dokter` (`NIP`, `nama`, `jenis_kelamin`, `alamat`, `no_telp`, `gaji_pokok`) VALUES
-	('123', 'aa', 'L', '1231', '123', 123);
+REPLACE INTO `dokter` (`NIP`, `nama`, `jenis_kelamin`, `alamat`, `no_telp`, `gaji_pokok`) VALUES
+	('001', 'Aldy', 'L', 'Jalan Buntu 1', '081333533325', 1500000),
+	('002', 'Adit', 'L', 'Jalan Buntu 2', '082122299910', 1500000),
+	('003', 'Haechal', 'L', 'Jalan Buntu 3', '085929099952', 1250000),
+	('004', 'Dika', 'L', 'Jalan Buntu 4', '085239393930', 1200000);
 /*!40000 ALTER TABLE `dokter` ENABLE KEYS */;
 
 -- Dumping structure for table rumah_sakit.pasien
@@ -45,12 +48,15 @@ CREATE TABLE IF NOT EXISTS `pasien` (
   `tinggi_badan` int(3) NOT NULL,
   `golongan_darah` varchar(2) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
--- Dumping data for table rumah_sakit.pasien: ~1 rows (approximately)
+-- Dumping data for table rumah_sakit.pasien: ~4 rows (approximately)
 /*!40000 ALTER TABLE `pasien` DISABLE KEYS */;
-INSERT INTO `pasien` (`ID`, `nama`, `jenis_kelamin`, `alamat`, `no_telp`, `umur`, `berat_badan`, `tinggi_badan`, `golongan_darah`) VALUES
-	(1, 'Aldy', 'L', 'aa', 'a', 1, 11, 11, 'A');
+REPLACE INTO `pasien` (`ID`, `nama`, `jenis_kelamin`, `alamat`, `no_telp`, `umur`, `berat_badan`, `tinggi_badan`, `golongan_darah`) VALUES
+	(1, 'Bagas', 'L', 'Jalan Mundur 1', '0341411002', 12, 35, 130, 'A'),
+	(2, 'Vika', 'P', 'Jalan Maju 2', '0341415378', 16, 55, 150, 'O'),
+	(3, 'Putra', 'L', 'Jalan Terus 3', '081592098233', 25, 78, 175, 'AB'),
+	(4, 'Putri', 'P', 'Jalan Dulu Aja 4', '082133099872', 30, 67, 170, 'B');
 /*!40000 ALTER TABLE `pasien` ENABLE KEYS */;
 
 -- Dumping structure for table rumah_sakit.penyakit
@@ -61,17 +67,22 @@ CREATE TABLE IF NOT EXISTS `penyakit` (
   PRIMARY KEY (`kode_penyakit`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table rumah_sakit.penyakit: ~0 rows (approximately)
+-- Dumping data for table rumah_sakit.penyakit: ~7 rows (approximately)
 /*!40000 ALTER TABLE `penyakit` DISABLE KEYS */;
-INSERT INTO `penyakit` (`kode_penyakit`, `nama_penyakit`, `golongan`) VALUES
+REPLACE INTO `penyakit` (`kode_penyakit`, `nama_penyakit`, `golongan`) VALUES
 	('1', 'Demam', '1'),
-	('2', 'Batuk', '2');
+	('2', 'Batuk', '1'),
+	('3', 'Diare', '2'),
+	('4', 'DBD', '2'),
+	('5', 'Typhus', '2'),
+	('6', 'Stroke', '3'),
+	('7', 'Infeksi dalam', '3');
 /*!40000 ALTER TABLE `penyakit` ENABLE KEYS */;
 
 -- Dumping structure for table rumah_sakit.transaksi
 CREATE TABLE IF NOT EXISTS `transaksi` (
   `no_transaksi` int(11) NOT NULL AUTO_INCREMENT,
-  `id_pasien` int(11) NOT NULL DEFAULT 0,
+  `id_pasien` int(11) NOT NULL DEFAULT '0',
   `nip_dokter` varchar(12) NOT NULL,
   `kode_penyakit` varchar(20) NOT NULL,
   `biaya_perawatan` int(12) NOT NULL,
