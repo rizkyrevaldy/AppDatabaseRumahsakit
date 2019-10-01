@@ -66,6 +66,9 @@ namespace AppDatabaseRumahsakit
             else if (Form1.status == 'u')
             {
                 string select = "SELECT * FROM transaksi WHERE no_transaksi=@no";
+                string select2 = "SELECT ID FROM pasien";
+                string select3 = "SELECT NIP FROM dokter";
+                string select4 = "SELECT kode_penyakit FROM penyakit";
                 try
                 {
                     databaseConnection.Open();
@@ -75,13 +78,39 @@ namespace AppDatabaseRumahsakit
                     MySqlDataReader reader = slt.ExecuteReader();
                     while (reader.Read())
                     {
+                        cbPasien.Items.Add(reader["id_pasien"].ToString());
                         cbPasien.SelectedItem = reader["id_pasien"].ToString();
+                        cbDokter.Items.Add(reader["nip_dokter"].ToString());
                         cbDokter.SelectedItem = reader["nip_dokter"].ToString();
+                        cbPenyakit.Items.Add(reader["kode_penyakit"].ToString());
                         cbPenyakit.SelectedItem = reader["kode_penyakit"].ToString();
                         tbBiaya.Text = reader["biaya_perawatan"].ToString();
                     }
                     reader.Close();
-
+                    MySqlCommand slt2 = new MySqlCommand(select2, databaseConnection);
+                    slt2.CommandTimeout = 60;
+                    reader = slt2.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        cbPasien.Items.Add(reader["ID"].ToString());
+                    }
+                    reader.Close();
+                    MySqlCommand slt3 = new MySqlCommand(select3, databaseConnection);
+                    slt3.CommandTimeout = 60;
+                    reader = slt3.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        cbDokter.Items.Add(reader["NIP"].ToString());
+                    }
+                    reader.Close();
+                    MySqlCommand slt4 = new MySqlCommand(select4, databaseConnection);
+                    slt4.CommandTimeout = 60;
+                    reader = slt4.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        cbPenyakit.Items.Add(reader["kode_penyakit"].ToString());
+                    }
+                    reader.Close();
                 }
                 catch (Exception ex)
                 {
