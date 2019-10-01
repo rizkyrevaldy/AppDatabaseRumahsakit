@@ -65,7 +65,7 @@ namespace AppDatabaseRumahsakit
                         while (reader.Read())
                         {
                             ListViewItem listViewItem = new ListViewItem(reader["ID"].ToString());
-                            listViewItem.SubItems.Add(reader["nama"].ToString());
+                            listViewItem.SubItems.Add(reader["nama_pasien"].ToString());
                             listViewItem.SubItems.Add(reader["jenis_kelamin"].ToString());
                             listViewItem.SubItems.Add(reader["alamat"].ToString());
                             listViewItem.SubItems.Add(reader["no_telp"].ToString());
@@ -169,7 +169,7 @@ namespace AppDatabaseRumahsakit
             else if (tabControl1.SelectedTab.Equals(tabPage4))
             {
                 listView3.Items.Clear();
-                string query = "SELECT * FROM transaksi";
+                string query = "SELECT * FROM transaksi t join dokter d ON t.nip_dokter = d.NIP join pasien p ON p.ID=t.id_pasien join penyakit k ON k.kode_penyakit=t.kode_penyakit";
                 try
                 {
                     databaseConnection.Open();
@@ -183,8 +183,11 @@ namespace AppDatabaseRumahsakit
                         {
                             ListViewItem listViewItem = new ListViewItem(reader["no_transaksi"].ToString());
                             listViewItem.SubItems.Add(reader["id_pasien"].ToString());
-                            listViewItem.SubItems.Add(reader["nip_dokter"].ToString()); //no_transaksi id_pasien nip_dokter kode_penyakit biaya_perawatan
+                            listViewItem.SubItems.Add(reader["nama_pasien"].ToString());
+                            listViewItem.SubItems.Add(reader["nip_dokter"].ToString());
+                            listViewItem.SubItems.Add(reader["nama"].ToString());//no_transaksi id_pasien nip_dokter kode_penyakit biaya_perawatan
                             listViewItem.SubItems.Add(reader["kode_penyakit"].ToString());
+                            listViewItem.SubItems.Add(reader["nama_penyakit"].ToString());
                             listViewItem.SubItems.Add(reader["biaya_perawatan"].ToString());
                             listView3.Items.Add(listViewItem);
                         }

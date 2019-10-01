@@ -31,7 +31,7 @@ namespace AppDatabaseRumahsakit
                     MySqlDataReader reader = slt.ExecuteReader();
                     while (reader.Read())
                     {
-                        tbNama.Text = reader["nama"].ToString();
+                        tbNama.Text = reader["nama_pasien"].ToString();
                         cbJK.SelectedItem = reader["jenis_kelamin"].ToString();
                         tbAlamat.Text = reader["alamat"].ToString();
                         tbTelp.Text = reader["no_telp"].ToString();
@@ -57,7 +57,7 @@ namespace AppDatabaseRumahsakit
         {
             if (Form1.status == 'c')
             {
-                string query = "INSERT INTO pasien (nama, jenis_kelamin, alamat, no_telp, umur, berat_badan, tinggi_badan, golongan_darah) VALUES(@nama, @jenis_kelamin, @alamat, @no_telp, @umur, @berat_badan, @tinggi_badan, @golongan_darah)"; 
+                string query = "INSERT INTO pasien (nama_pasien, jenis_kelamin, alamat, no_telp, umur, berat_badan, tinggi_badan, golongan_darah) VALUES(@nama, @jenis_kelamin, @alamat, @no_telp, @umur, @berat_badan, @tinggi_badan, @golongan_darah)"; 
 
 
             try
@@ -91,7 +91,7 @@ namespace AppDatabaseRumahsakit
                 try
                 {
                     databaseConnection.Open();
-                    string query = "UPDATE pasien SET nama = @nama, jenis_kelamin = @jenis_kelamin, alamat = @alamat, no_telp = @no_telp, umur = @umur, berat_badan = @berat_badan, tinggi_badan = @tinggi_badan, golongan_darah = @golongan_darah  WHERE ID = @id";
+                    string query = "UPDATE pasien SET nama_pasien = @nama, jenis_kelamin = @jenis_kelamin, alamat = @alamat, no_telp = @no_telp, umur = @umur, berat_badan = @berat_badan, tinggi_badan = @tinggi_badan, golongan_darah = @golongan_darah  WHERE ID = @id";
                     MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
                     cmd.CommandTimeout = 60;
                     cmd.Parameters.AddWithValue("@id", Form1.id);
