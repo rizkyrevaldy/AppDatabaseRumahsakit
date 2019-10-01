@@ -65,17 +65,42 @@ namespace AppDatabaseRumahsakit
             }
             else if (Form1.status == 'u')
             {
-                string select = "SELECT * FROM transaksi WHERE no_transaksi=@no";
-                string select2 = "SELECT ID FROM pasien";
-                string select3 = "SELECT NIP FROM dokter";
-                string select4 = "SELECT kode_penyakit FROM penyakit";
+                
+                string select = "SELECT ID FROM pasien";
+                string select2 = "SELECT NIP FROM dokter";
+                string select3 = "SELECT kode_penyakit FROM penyakit";
+                string select4 = "SELECT * FROM transaksi WHERE no_transaksi=@no";
                 try
                 {
                     databaseConnection.Open();
                     MySqlCommand slt = new MySqlCommand(select, databaseConnection);
                     slt.CommandTimeout = 60;
-                    slt.Parameters.AddWithValue("@no", Form1.id);
                     MySqlDataReader reader = slt.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        cbPasien.Items.Add(reader["ID"].ToString());
+                    }
+                    reader.Close();
+                    MySqlCommand slt2 = new MySqlCommand(select2, databaseConnection);
+                    slt2.CommandTimeout = 60;
+                    reader = slt2.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        cbDokter.Items.Add(reader["NIP"].ToString());
+                    }
+                    reader.Close();
+                    MySqlCommand slt3 = new MySqlCommand(select3, databaseConnection);
+                    slt3.CommandTimeout = 60;
+                    reader = slt3.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        cbPenyakit.Items.Add(reader["kode_penyakit"].ToString());
+                    }
+                    reader.Close();
+                    MySqlCommand slt4 = new MySqlCommand(select4, databaseConnection);
+                    slt4.CommandTimeout = 60;
+                    slt4.Parameters.AddWithValue("@no", Form1.id);
+                    reader = slt4.ExecuteReader();
                     while (reader.Read())
                     {
                         cbPasien.Items.Add(reader["id_pasien"].ToString());
@@ -87,30 +112,7 @@ namespace AppDatabaseRumahsakit
                         tbBiaya.Text = reader["biaya_perawatan"].ToString();
                     }
                     reader.Close();
-                    MySqlCommand slt2 = new MySqlCommand(select2, databaseConnection);
-                    slt2.CommandTimeout = 60;
-                    reader = slt2.ExecuteReader();
-                    while (reader.Read())
-                    {
-                        cbPasien.Items.Add(reader["ID"].ToString());
-                    }
-                    reader.Close();
-                    MySqlCommand slt3 = new MySqlCommand(select3, databaseConnection);
-                    slt3.CommandTimeout = 60;
-                    reader = slt3.ExecuteReader();
-                    while (reader.Read())
-                    {
-                        cbDokter.Items.Add(reader["NIP"].ToString());
-                    }
-                    reader.Close();
-                    MySqlCommand slt4 = new MySqlCommand(select4, databaseConnection);
-                    slt4.CommandTimeout = 60;
-                    reader = slt4.ExecuteReader();
-                    while (reader.Read())
-                    {
-                        cbPenyakit.Items.Add(reader["kode_penyakit"].ToString());
-                    }
-                    reader.Close();
+                   
                 }
                 catch (Exception ex)
                 {
