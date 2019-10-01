@@ -90,7 +90,8 @@ namespace AppDatabaseRumahsakit
             {
                 try
                 {
-                string query = "UPDATE pasien SET nama = @nama, jenis_kelamin = @jenis_kelamin, alamat = @alamat, no_telp = @no_telp, umur = @umur, berat_badan = @berat_badan, tinggi_badan = @tinggi_badan, golongan_darah = @golongan_darah  WHERE ID = @id";
+                    databaseConnection.Open();
+                    string query = "UPDATE pasien SET nama = @nama, jenis_kelamin = @jenis_kelamin, alamat = @alamat, no_telp = @no_telp, umur = @umur, berat_badan = @berat_badan, tinggi_badan = @tinggi_badan, golongan_darah = @golongan_darah  WHERE ID = @id";
                     MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
                     cmd.CommandTimeout = 60;
                     cmd.Parameters.AddWithValue("@id", Form1.id);

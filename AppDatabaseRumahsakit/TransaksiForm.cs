@@ -103,11 +103,8 @@ namespace AppDatabaseRumahsakit
                     reader = slt4.ExecuteReader();
                     while (reader.Read())
                     {
-                        cbPasien.Items.Add(reader["id_pasien"].ToString());
                         cbPasien.SelectedItem = reader["id_pasien"].ToString();
-                        cbDokter.Items.Add(reader["nip_dokter"].ToString());
                         cbDokter.SelectedItem = reader["nip_dokter"].ToString();
-                        cbPenyakit.Items.Add(reader["kode_penyakit"].ToString());
                         cbPenyakit.SelectedItem = reader["kode_penyakit"].ToString();
                         tbBiaya.Text = reader["biaya_perawatan"].ToString();
                     }
@@ -156,7 +153,7 @@ namespace AppDatabaseRumahsakit
             }
             else if (Form1.status == 'u')
             {
-                string query = "UPDATE transaksi SET id_pasien = @id_pasien, nip_dokter = @nip_dokter, kode_penyakit = @kode_penyakit ,biaya_perawatan = @biaya_perawatan, WHERE no_transaksi = @no_transaksi";
+                string query = "UPDATE transaksi SET id_pasien = @id_pasien, nip_dokter = @nip_dokter, kode_penyakit = @kode_penyakit ,biaya_perawatan = @biaya_perawatan WHERE no_transaksi = @no_transaksi";
 
                 try
                 {

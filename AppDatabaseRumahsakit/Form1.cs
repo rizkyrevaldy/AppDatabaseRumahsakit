@@ -362,11 +362,11 @@ namespace AppDatabaseRumahsakit
             this.Close();
         }
 
-        /* private void Form1_Activated(object sender, EventArgs e)
+        private void Form1_Activated(object sender, EventArgs e)
         {
             button3.PerformClick();
         }
-        */
+        
     }
 }
 
