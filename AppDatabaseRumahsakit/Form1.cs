@@ -169,7 +169,7 @@ namespace AppDatabaseRumahsakit
             else if (tabControl1.SelectedTab.Equals(tabPage4))
             {
                 listView3.Items.Clear();
-                string query = "SELECT * FROM transaksi t join dokter d ON t.nip_dokter = d.NIP join pasien p ON p.ID=t.id_pasien join penyakit k ON k.kode_penyakit=t.kode_penyakit";
+                string query = "SELECT * FROM transaksi t join dokter d ON t.nip_dokter = d.NIP join pasien p ON p.ID=t.id_pasien join penyakit k ON k.kode_penyakit=t.kode_penyakit ORDER BY t.no_transaksi";
                 try
                 {
                     databaseConnection.Open();
